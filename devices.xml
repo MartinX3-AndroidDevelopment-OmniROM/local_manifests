@@ -29,7 +29,7 @@
     <project path="hardware/sony/dataservices" name="vendor-qcom-opensource-dataservices" remote="SODP" revision="p-mr1" />
     <project path="hardware/sony/cash" name="vendor-sony-oss-cash" remote="SODP" revision="master" />
     <project path="hardware/sony/camera" name="camera" remote="SODP" revision="aosp/LA.UM.6.4.r1" />
-    <project path="hardware/sony/bootctrl" name="hardware-qcom-bootctrl" remote="SODP" revision="master" />
+    <project path="hardware/sony/bootctrl" name="platform/hardware/qcom/bootctrl" remote="aosp" revision="pie-platform-release" />
     <project path="hardware/sony/bluetooth" name="vendor-qcom-opensource-bluetooth" remote="SODP" revision="master" />
     <project path="hardware/sony/common-headers" name="device-sony-common-headers" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
 
@@ -53,4 +53,3 @@
     <project path="hardware/sony/sepolicy" name="omnirom-android_device_sony_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <project path="device/sony/tama-common" name="omnirom-android_device_sony_tama-common" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
 </manifest>
-
