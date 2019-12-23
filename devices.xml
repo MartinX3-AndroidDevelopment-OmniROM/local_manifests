@@ -8,6 +8,13 @@
     <remote name="MartinX3sAndroidDevelopment"
             fetch="https://github.com/MartinX3sAndroidDevelopment" />
     
+<!--Modified SODP repos-->
+    <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
+        <linkfile src="repo_update.sh" dest="repo_update.sh" />
+    </project>
+    <project path="kernel/sony/msm" name="sonyxperiadev-kernel" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
+    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="sonyxperiadev-kernel-defconfig" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
+
 <!--Sony Xperia TAMA devices-->
     <project path="device/sony/akari" name="android_device_sony_akari" groups="device" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <project path="device/sony/akatsuki" name="android_device_sony_akatsuki" groups="device" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
@@ -18,8 +25,6 @@
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/qcacld-3.0" name="vendor-qcom-opensource-wlan-qcacld-3.0" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="vendor-qcom-opensource-wlan-qca-wifi-host-cmn" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/fw-api" name="vendor-qcom-opensource-wlan-fw-api" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
-    <project path="kernel/sony/msm" name="sonyxperiadev-kernel" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
-    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="sonyxperiadev-kernel-defconfig" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
     <project path="hardware/sony/transpower" name="transpower" remote="SODP" revision="android-9.0.0_r46" />
     <project path="hardware/sony/timekeep" name="timekeep" remote="SODP" revision="master" />
     <project path="hardware/sony/macaddrsetup" name="macaddrsetup" remote="SODP" revision="master" />
