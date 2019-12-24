@@ -29,6 +29,7 @@
     <project path="hardware/sony/dataservices" name="vendor-qcom-opensource-dataservices" remote="SODP" revision="p-mr1" />
     <project path="hardware/sony/display-sde" name="hardware-qcom-display" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="hardware/sony/fingerprint" name="vendor-sony-oss-fingerprint" remote="SODP" revision="master" />
+    <project path="hardware/sony/gps" name="hardware-qcom-gps-sdm845" remote="SODP" revision="aosp/android-9.0.0_r11" />
     <project path="hardware/sony/location" name="vendor-qcom-opensource-location" remote="SODP" revision="p-mr0" />
     <project path="hardware/sony/macaddrsetup" name="macaddrsetup" remote="SODP" revision="master" />
     <project path="hardware/sony/timekeep" name="timekeep" remote="SODP" revision="master" />
