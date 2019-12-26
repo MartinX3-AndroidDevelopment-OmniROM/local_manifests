@@ -22,7 +22,7 @@
     <project path="hardware/sony/media" name="platform/hardware/qcom/media" remote="aosp" />
     <project path="hardware/sony/media/sdm845" name="platform/hardware/qcom/sdm845/media" remote="aosp" />
 
-    <!--Sony Open Devices Project repos-->
+<!--Sony Open Devices Project repos-->
     <project path="device/sony/common-headers" name="device-sony-common-headers" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
     <project path="device/sony/sepolicy" name="device-sony-sepolicy" remote="SODP" revision="p-mr1" />
     <project path="hardware/sony/bluetooth" name="vendor-qcom-opensource-bluetooth" remote="SODP" revision="master" />
@@ -60,7 +60,7 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
     <remove-project name="android_system_sepolicy" />
-    <project path="system/sepolicy" name="android_system_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
+    <project path="system/sepolicy" name="omnirom-android_system_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <remove-project name="android_vendor_omni" />
     <project path="vendor/omni" name="omnirom-android_vendor_omni" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <!--Workaround to remove the project without modifying the repo where it got declared-->
