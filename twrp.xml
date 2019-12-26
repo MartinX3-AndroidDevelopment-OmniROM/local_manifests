@@ -10,6 +10,10 @@
     <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="twrp-android_bootable_recovery" remote="MartinX3sAndroidDevelopment" revision="MartinX3/omnirom/android-9.0" />
 
-<!-- Include external Magisk repo for repack binaries -->
+    <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="master" />
+
+    <!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
+    <remove-project name="android_system_update_engine" />
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />
 </manifest>
