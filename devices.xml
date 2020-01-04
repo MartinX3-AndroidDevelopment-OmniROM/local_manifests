@@ -16,7 +16,6 @@
     <project path="device/sony/common" name="omnirom-android_device_sony_common" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
 
 <!--AOSP Project repos-->
-    <project path="hardware/sony/audio" name="platform/hardware/qcom/audio" remote="aosp" />
     <project path="hardware/sony/bootctrl" name="platform/hardware/qcom/bootctrl" remote="aosp" />
     <project path="hardware/sony/gps" name="platform/hardware/qcom/sdm845/gps" remote="aosp" />
     <project path="hardware/sony/media" name="platform/hardware/qcom/media" remote="aosp" />
@@ -40,6 +39,9 @@
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="vendor-qcom-opensource-wlan-qca-wifi-host-cmn" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/fw-api" name="vendor-qcom-opensource-wlan-fw-api" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="vendor/oss/qcrilam" name="QcRilAm" remote="SODP" revision="p-mr1" />
+
+<!--OmniROM repos-->
+    <project path="hardware/sony/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-9.0" />
 
 <!--Modified SODP repos-->
     <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
