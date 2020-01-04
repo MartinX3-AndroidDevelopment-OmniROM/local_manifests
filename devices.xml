@@ -22,7 +22,6 @@
     <project path="hardware/sony/media/sdm845" name="platform/hardware/qcom/sdm845/media" remote="aosp" />
 
 <!--SODP repos-->
-    <project path="device/sony/common-headers" name="device-sony-common-headers" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
     <project path="device/sony/sepolicy" name="device-sony-sepolicy" remote="SODP" revision="p-mr1" />
     <project path="hardware/sony/bluetooth" name="vendor-qcom-opensource-bluetooth" remote="SODP" revision="master" />
     <project path="hardware/sony/camera" name="camera" remote="SODP" revision="aosp/LA.UM.6.4.r1" />
