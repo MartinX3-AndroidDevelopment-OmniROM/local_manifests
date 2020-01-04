@@ -22,7 +22,7 @@
     <project path="hardware/sony/media" name="platform/hardware/qcom/media" remote="aosp" />
     <project path="hardware/sony/media/sdm845" name="platform/hardware/qcom/sdm845/media" remote="aosp" />
 
-<!--Sony Open Devices Project repos-->
+<!--SODP repos-->
     <project path="device/sony/common-headers" name="device-sony-common-headers" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
     <project path="device/sony/sepolicy" name="device-sony-sepolicy" remote="SODP" revision="p-mr1" />
     <project path="hardware/sony/bluetooth" name="vendor-qcom-opensource-bluetooth" remote="SODP" revision="master" />
@@ -42,11 +42,11 @@
     <project path="vendor/oss/qcrilam" name="QcRilAm" remote="SODP" revision="p-mr1" />
 
 <!--Modified SODP repos-->
-<project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
-    <linkfile src="repo_update.sh" dest="repo_update.sh" />
-</project>
-<project path="kernel/sony/msm" name="sonyxperiadev-kernel" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
-<project path="kernel/sony/msm/arch/arm64/configs/sony" name="sonyxperiadev-kernel-defconfig" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
+    <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
+        <linkfile src="repo_update.sh" dest="repo_update.sh" />
+    </project>
+    <project path="kernel/sony/msm" name="sonyxperiadev-kernel" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
+    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="sonyxperiadev-kernel-defconfig" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
 
 <!--Modified OMNIROM repos-->
     <remove-project name="android_build" />
@@ -63,7 +63,7 @@
     <project path="system/sepolicy" name="omnirom-android_system_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <remove-project name="android_vendor_omni" />
     <project path="vendor/omni" name="omnirom-android_vendor_omni" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <!--Workaround to remove the project without modifying the repo where it got declared-->
+    <!--Workaround to remove the project without modifying the repo where it got declared (It's already declared in the SODP section) -->
     <project name="android_hardware_sony_qcrilam" path="hardware/sony/qcrilam" remote="omnirom" revision="android-9.0" />
     <remove-project name="android_hardware_sony_qcrilam" />
 </manifest>
