@@ -8,48 +8,12 @@
     <remote name="SODP"
             fetch="https://github.com/sonyxperiadev" />
 
-<!--Sony devices-->
-    <project path="device/sony/akari" name="omnirom-android_device_sony_akari" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <project path="device/sony/akatsuki" name="omnirom-android_device_sony_akatsuki" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <project path="device/sony/apollo" name="omnirom-android_device_sony_apollo" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <project path="device/sony/tama-common" name="omnirom-android_device_sony_tama-common" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <project path="device/sony/common" name="omnirom-android_device_sony_common" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
+    <!--Sony devices-->
+    <project path="device/sony/akari" name="android_device_sony_akari" remote="omnirom" revision="android-9.0" />
+    <project path="device/sony/akatsuki" name="android_device_sony_akatsuki" remote="omnirom" revision="android-9.0" />
+    <project path="device/sony/apollo" name="android_device_sony_apollo" remote="omnirom" revision="android-9.0" />
 
-<!--AOSP Project repos-->
-    <project path="hardware/sony/bootctrl" name="platform/hardware/qcom/bootctrl" remote="aosp" />
-    <project path="hardware/sony/gps" name="platform/hardware/qcom/sdm845/gps" remote="aosp" />
-    <project path="hardware/sony/media" name="platform/hardware/qcom/media" remote="aosp" />
-    <project path="hardware/sony/media/sdm845" name="platform/hardware/qcom/sdm845/media" remote="aosp" />
-
-<!--SODP repos-->
-    <project path="device/sony/sepolicy" name="device-sony-sepolicy" remote="SODP" revision="p-mr1" />
-    <project path="hardware/sony/bluetooth" name="vendor-qcom-opensource-bluetooth" remote="SODP" revision="master" />
-    <project path="hardware/sony/camera" name="camera" remote="SODP" revision="aosp/LA.UM.6.4.r1" />
-    <project path="hardware/sony/cash" name="vendor-sony-oss-cash" remote="SODP" revision="master" />
-    <project path="hardware/sony/dataservices" name="vendor-qcom-opensource-dataservices" remote="SODP" revision="p-mr1" />
-    <project path="hardware/sony/display-sde" name="hardware-qcom-display" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
-    <project path="hardware/sony/fingerprint" name="vendor-sony-oss-fingerprint" remote="SODP" revision="master" />
-    <project path="hardware/sony/location" name="vendor-qcom-opensource-location" remote="SODP" revision="p-mr0" />
-    <project path="hardware/sony/macaddrsetup" name="macaddrsetup" remote="SODP" revision="master" />
-    <project path="hardware/sony/timekeep" name="timekeep" remote="SODP" revision="master" />
-    <project path="hardware/sony/transpower" name="transpower" remote="SODP" revision="android-9.0.0_r46" />
-    <project path="packages/apps/ExtendedSettings" name="packages_apps_ExtendedSettings" remote="SODP" revision="p-mr1" />
-    <project path="kernel/sony/msm" name="kernel" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
-    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="kernel-defconfig" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
-    <project path="kernel/sony/msm/drivers/staging/wlan-qc/qcacld-3.0" name="vendor-qcom-opensource-wlan-qcacld-3.0" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
-    <project path="kernel/sony/msm/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="vendor-qcom-opensource-wlan-qca-wifi-host-cmn" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
-    <project path="kernel/sony/msm/drivers/staging/wlan-qc/fw-api" name="vendor-qcom-opensource-wlan-fw-api" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
-    <project path="vendor/oss/qcrilam" name="QcRilAm" remote="SODP" revision="p-mr1" />
-
-    <!--OmniROM repos-->
-    <project path="hardware/sony/audio" name="android_hardware_sony_audio" remote="omnirom" revision="android-9.0" />
-
-    <!--Modified SODP repos-->
-    <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
-        <linkfile src="repo_update.sh" dest="repo_update.sh" />
-    </project>
-
-<!--Modified OMNIROM repos-->
+    <!--Modified OMNIROM repos-->
     <remove-project name="android_build" />
     <project path="build/make" name="omnirom-android_build" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" >
         <copyfile src="core/root.mk" dest="Makefile" />
@@ -64,7 +28,4 @@
     <project path="system/sepolicy" name="omnirom-android_system_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
     <remove-project name="android_vendor_omni" />
     <project path="vendor/omni" name="omnirom-android_vendor_omni" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
-    <!--Workaround to remove the project without modifying the repo where it got declared (It's already declared in the SODP section) -->
-    <project name="android_hardware_sony_qcrilam" path="hardware/sony/qcrilam" remote="omnirom" revision="android-9.0" />
-    <remove-project name="android_hardware_sony_qcrilam" />
 </manifest>
