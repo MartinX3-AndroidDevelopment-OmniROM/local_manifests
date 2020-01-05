@@ -35,6 +35,7 @@
     <project path="hardware/sony/transpower" name="transpower" remote="SODP" revision="android-9.0.0_r46" />
     <project path="packages/apps/ExtendedSettings" name="packages_apps_ExtendedSettings" remote="SODP" revision="p-mr1" />
     <project path="kernel/sony/msm" name="kernel" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
+    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="kernel-defconfig" remote="SODP" revision="aosp/LE.UM.2.3.2.r1.4" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/qcacld-3.0" name="vendor-qcom-opensource-wlan-qcacld-3.0" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="vendor-qcom-opensource-wlan-qca-wifi-host-cmn" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
     <project path="kernel/sony/msm/drivers/staging/wlan-qc/fw-api" name="vendor-qcom-opensource-wlan-fw-api" remote="SODP" revision="aosp/LA.UM.7.3.r1" />
@@ -47,7 +48,6 @@
     <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
         <linkfile src="repo_update.sh" dest="repo_update.sh" />
     </project>
-    <project path="kernel/sony/msm/arch/arm64/configs/sony" name="sonyxperiadev-kernel-defconfig" remote="MartinX3sAndroidDevelopment" revision="MartinX3/aosp/LE.UM.2.3.2.r1.4" />
 
 <!--Modified OMNIROM repos-->
     <remove-project name="android_build" />
