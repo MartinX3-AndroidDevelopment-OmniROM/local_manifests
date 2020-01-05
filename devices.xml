@@ -40,7 +40,7 @@
     <project path="vendor/oss/qcrilam" name="QcRilAm" remote="SODP" revision="p-mr1" />
 
 <!--OmniROM repos-->
-    <project path="hardware/sony/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-9.0" />
+    <project path="hardware/sony/audio" name="android_hardware_sony_audio" remote="omnirom" revision="android-9.0" />
 
 <!--Modified SODP repos-->
     <project path="hardware/sony/repo_update" name="sonyxperiadev-repo_update" remote="MartinX3sAndroidDevelopment" revision="MartinX3/OmniROM/android-9.0.0_r46">
