@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="MartinX3sAndroidDevelopment"
-            fetch="https://github.com/MartinX3sAndroidDevelopment" />
+    <remote name="MartinX3-AndroidDevelopment-OmniROM"
+            fetch="https://github.com/MartinX3-AndroidDevelopment-OmniROM" />
     <remote name="omnirom"
             fetch="https://github.com/omnirom"
             review="gerrit.omnirom.org" />
-    <remote name="SODP"
-            fetch="https://github.com/sonyxperiadev" />
 
     <!--Sony devices-->
     <project path="device/sony/akari" name="android_device_sony_akari" remote="omnirom" revision="android-9.0" />
@@ -15,7 +13,7 @@
 
     <!--Modified OMNIROM repos-->
     <remove-project name="android_build" />
-    <project path="build/make" name="omnirom-android_build" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" >
+    <project path="build/make" name="omnirom-android_build" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/android-9.0" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -25,7 +23,7 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
     <remove-project name="android_system_sepolicy" />
-    <project path="system/sepolicy" name="omnirom-android_system_sepolicy" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
+    <project path="system/sepolicy" name="omnirom-android_system_sepolicy" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/android-9.0" />
     <remove-project name="android_vendor_omni" />
-    <project path="vendor/omni" name="omnirom-android_vendor_omni" remote="MartinX3sAndroidDevelopment" revision="MartinX3/android-9.0" />
+    <project path="vendor/omni" name="omnirom-android_vendor_omni" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/android-9.0" />
 </manifest>

@@ -1,3 +1,3 @@
 # Instructions
 
-https://github.com/MartinX3sAndroidDevelopment/SCRIPTS_BUILD
+https://github.com/MartinX3-AndroidDevelopment/SCRIPTS_BUILD
