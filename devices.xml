@@ -44,4 +44,7 @@
 <!--sm8150-->
 <project path="device/sony/kumano" name="device-sony-kumano" groups="device" remote="sony" revision="p-mr1" />
 <project path="device/sony/griffin" name="device-sony-griffin" groups="device" remote="sony" revision="p-mr1" />
+
+<!-- Add some OmniROM extras -->
+<include name="local_manifests/omnirom/devices.xml"/>
 </manifest>

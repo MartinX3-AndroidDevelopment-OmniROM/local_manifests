@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="MartinX3-AndroidDevelopment-OmniROM"
+            fetch="https://github.com/MartinX3-AndroidDevelopment-OmniROM"/>
+            
+<!--Need to remove .mk file executions there, because the OmniROM 9.0 build system already calls every .mk file. Bug?-->
+<remove-project name="device-sony-common" />
+<project path="device/sony/common" name="device-sony-common" groups="device" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0" >
+  <linkfile src="misc/no-op/Android.mk" dest="hardware/qcom/sdm845/Android.mk" />
+</project>
+             
+<!--msm8956-->
+<remove-project name="device-sony-loire" />
+<remove-project name="device-sony-blanc" />
+<remove-project name="device-sony-kugo" />
+<remove-project name="device-sony-suzu" />
+
+<!--sdm630-->
+<remove-project name="device-sony-nile" />
+<remove-project name="device-sony-discovery" />
+<remove-project name="device-sony-pioneer" />
+<remove-project name="device-sony-voyager" />
+
+<!--sdm630-->
+<remove-project name="device-sony-ganges" />
+<remove-project name="device-sony-kirin" />
+<remove-project name="device-sony-mermaid" />
+
+<!--msm8996-->
+<remove-project name="device-sony-tone" />
+<remove-project name="device-sony-dora" />
+<remove-project name="device-sony-kagura" />
+<remove-project name="device-sony-keyaki" />
+
+<!--msm8998-->
+<remove-project name="device-sony-yoshino" />
+<remove-project name="device-sony-lilac" />
+<remove-project name="device-sony-maple" />
+<remove-project name="device-sony-poplar" />
+
+<!--sdm845-->
+<remove-project name="device-sony-akari" />
+<project path="device/sony/akari" name="android_device_sony_akari" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0" />
+<remove-project name="device-sony-apollo" />
+<project path="device/sony/apollo" name="android_device_sony_apollo" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0" />
+<remove-project name="device-sony-akatsuki" />
+<project path="device/sony/akatsuki" name="android_device_sony_akatsuki" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0" />
+
+<!--sm8150-->
+<remove-project name="device-sony-kumano" />
+<remove-project name="device-sony-griffin" />
+
+<!-- Add some OmniROM extras -->
+<include name="local_manifests/omnirom/extras.xml"/>
+</manifest>

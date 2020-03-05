@@ -2,19 +2,19 @@
 <manifest>
 <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
 
-<remove-project name="platform/hardware/qcom/gps" />
-<remove-project name="platform/hardware/qcom/sdm845/gps" />
-<remove-project name="platform/hardware/qcom/sdm845/media" />
+<!--<remove-project name="platform/hardware/qcom/gps"/>--><!--Not existing in OmniROM-->
+<!--<remove-project name="platform/hardware/qcom/sdm845/gps"/>--><!--Not existing in OmniROM-->
+<!--<remove-project name="platform/hardware/qcom/sdm845/media"/>--><!--Not existing in OmniROM-->
 <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
 
-<project path="hardware/qcom/gps" name="platform/hardware/qcom/sdm845/gps" remote="aosp" groups="qcom_sdm845" revision="master" />
+<project path="hardware/qcom/gps" name="platform/hardware/qcom/sdm845/gps" remote="aosp" groups="qcom_sdm845" />
 
 <project path="hardware/qcom/display/sde" name="hardware-qcom-display" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" />
 <project path="hardware/qcom/media/sm8150" name="hardware-qcom-media" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" />
 
-<project path="hardware/qcom/media/sdm845" name="platform/hardware/qcom/sdm845/media" groups="qcom_sdm845" remote="aosp" revision="master" />
+<project path="hardware/qcom/media/sdm845" name="platform/hardware/qcom/sdm845/media" groups="qcom_sdm845" remote="aosp" />
 
-<project path="hardware/qcom/data/ipacfg-mgr/sdm845" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="qcom_sdm845" remote="aosp" revision="master" />
+<project path="hardware/qcom/data/ipacfg-mgr/sdm845" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="qcom_sdm845" remote="aosp" />
 
 <project path="vendor/qcom/opensource/camera" name="camera" groups="device" remote="sony" revision="aosp/LA.UM.6.4.r1" />
 <project path="vendor/qcom/opensource/bluetooth" name="vendor-qcom-opensource-bluetooth" groups="device" remote="sony" revision="master" />
@@ -22,7 +22,14 @@
 <project path="vendor/qcom/opensource/location" name="vendor-qcom-opensource-location" groups="device" remote="sony" revision="p-mr0" />
 <project path="vendor/qcom/opensource/wlan" name="hardware-qcom-wlan" groups="device" remote="sony" revision="master" />
 <project path="vendor/qcom/opensource/display-commonsys-intf" name="vendor-qcom-opensource-commonsys-intf-display" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" />
-<project path="vendor/qcom/opensource/interfaces" name="vendor-qcom-opensource-interfaces" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" >
-  <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
+<project path="vendor/qcom/opensource/interfaces" name="vendor-qcom-opensource-interfaces" groups="device" remote="sony" revision="d46cb766e825e05b41df0a65dd6366584c8c48aa" >
+<!--Revision d46cb766e825e05b41df0a65dd6366584c8c48aa because after that os_pickup.bp got removed
+Branch aosp/LA.UM.7.1.r1
+https://github.com/sonyxperiadev/vendor-qcom-opensource-interfaces/commit/cad5a8906ddd04c59c48632d42ae430855e227ec-->
+  <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" /> 
 </project>
+
+<!-- Add some OmniROM extras -->
+<include name="local_manifests/omnirom/qcom.xml"/>
 </manifest>
+

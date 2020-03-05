@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="MartinX3-AndroidDevelopment-OmniROM"
+            fetch="https://github.com/MartinX3-AndroidDevelopment-OmniROM"/>
+            
+<!--
+    OmniROM executes every .mk file in the device tree. The SMD845 & SMD8150 can't co-exist, because both are defining libstagefrighthw
+    Since only TAMA should be supported, a buildguard makes no sense.
+-->
+<remove-project name="hardware-qcom-media" />
+
+<!--
+    Because kernel 4.14 introduced breaking changes
+    (These packages only available in android 10.0)
+    allocator 3.0 -> 2.0
+    composer 3.0 -> 2.1
+    mapper 3.0 -> 2.0
+    and because of
+    https://github.com/sonyxperiadev/vendor-qcom-opensource-interfaces/commit/cad5a8906ddd04c59c48632d42ae430855e227ec
+-->
+<remove-project name="vendor-qcom-opensource-interfaces" />
+<project path="vendor/qcom/opensource/interfaces" name="vendor-qcom-opensource-interfaces" groups="device" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0" >
+  <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
+</project>
+</manifest>

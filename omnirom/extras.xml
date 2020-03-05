@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="MartinX3-AndroidDevelopment"
+            fetch="https://github.com/MartinX3-AndroidDevelopment"/>
+
+    <!--Gets already fetched by the omni.dependencies file in the device repo-->
+    <!--<project path="device/sony/customization" name="android_device_sony_customization"
+             remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/omnirom-9.0_twrp-10.0"/>-->
+
+    <!--Removed by OmniROM, but important for A/B devices-->
+    <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
+
+    <!-- Using my own TWRP fork with not upstreamed patches -->
+    <!-- TODO COMMENTING IT OUT DUE TO `repopick` needs the correct remote attribut or it won't work -->
+    <!-- <remove-project name="android_bootable_recovery"/> -->
+    <!-- <project path="bootable/recovery" name="android_bootable_recovery" remote="MartinX3-AndroidDevelopment" revision="MartinX3/omnirom/android-9.0"/> -->
+</manifest>
