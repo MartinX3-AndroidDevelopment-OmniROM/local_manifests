@@ -2,4 +2,8 @@
 <manifest>
     <!--Breaks OmniROM inline kernel building-->
     <remove-project name="kernel-sony-msm-4.14-common"/>
+    <!--TODO: Remove this after switch to Android 10 base-->
+    <!--TODO: It is needed to get the dtbo.img to merge it with the TWRP image-->
+    <!--TODO: because in OmniROM 9.0 the dtboimage generation is broken-->
+    <project path="device/sony/prebuilt-sodp-kernel-4.14" name="kernel-sony-msm-4.14-common" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" clone-depth="1"/>
 </manifest>
