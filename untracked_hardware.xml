@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remove-project name="platform/hardware/broadcom/wlan" />
-    <remove-project name="platform/hardware/qcom/display" />
-    <remove-project name="platform/hardware/qcom/gps" />
-    <remove-project name="platform/hardware/qcom/media" />
-    <remove-project name="platform/hardware/qcom/msm8x09" />
-    <remove-project name="platform/hardware/qcom/msm8960" />
-    <remove-project name="platform/hardware/qcom/msm8994" />
-    <remove-project name="platform/hardware/qcom/msm8996" />
-    <remove-project name="platform/hardware/qcom/msm8998" />
-    <remove-project name="platform/hardware/qcom/msm8x26" />
-    <remove-project name="platform/hardware/qcom/msm8x27" />
-    <remove-project name="platform/hardware/qcom/msm8x84" />
-    <remove-project name="platform/hardware/qcom/sdm845/bt" />
-    <remove-project name="platform/hardware/qcom/sdm845/display" />
-    <remove-project name="platform/hardware/qcom/sdm845/gps" />
-    <remove-project name="platform/hardware/qcom/sdm845/media" />
+    <!--<remove-project name="platform/hardware/broadcom/wlan" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/display" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/gps" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/media" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8x09" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8960" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8994" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8996" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8998" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8x26" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8x27" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/msm8x84" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/sdm845/bt" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/sdm845/display" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/sdm845/gps" /> Not existing in the minimal omni twrp project-->
+    <!--remove-project name="platform/hardware/qcom/sdm845/media" /> Not existing in the minimal omni twrp project-->
     <remove-project name="platform/hardware/qcom/sdm845/thermal" />
     <remove-project name="platform/hardware/qcom/sdm845/vr" />
     <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />

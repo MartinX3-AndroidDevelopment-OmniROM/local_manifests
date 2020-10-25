@@ -2,27 +2,27 @@
 <manifest>
     <!-- Not building for cars... -->
     <remove-project name="platform/packages/apps/Car/Cluster" />
-    <remove-project name="platform/packages/apps/Car/Dialer" />
-    <remove-project name="platform/packages/apps/Car/Hvac" />
-    <remove-project name="platform/packages/apps/Car/LatinIME" />
-    <remove-project name="platform/packages/apps/Car/Launcher" />
-    <remove-project name="platform/packages/apps/Car/LensPicker" />
+    <!--<remove-project name="platform/packages/apps/Car/Dialer" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Hvac" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/LatinIME" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Launcher" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/LensPicker" /> Not existing in the minimal omni twrp project-->
     <remove-project name="platform/packages/apps/Car/LinkViewer" />
     <!-- PackageInstaller depends on car-list, which is in the libs: -->
     <!--<remove-project name="platform/packages/apps/Car/libs" />-->
-    <remove-project name="platform/packages/apps/Car/LocalMediaPlayer" />
-    <remove-project name="platform/packages/apps/Car/Media" />
-    <remove-project name="platform/packages/apps/Car/Messenger" />
+    <!--<remove-project name="platform/packages/apps/Car/LocalMediaPlayer" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Media" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Messenger" /> Not existing in the minimal omni twrp project-->
     <!--
     frameworks/base/packages/CarSystemUI (which cannot be untracked)
     depends on the Notification package.
     -->
     <!-- <remove-project name="platform/packages/apps/Car/Notification" /> -->
-    <remove-project name="platform/packages/apps/Car/Overview" />
-    <remove-project name="platform/packages/apps/Car/Radio" />
-    <remove-project name="platform/packages/apps/Car/Settings" />
-    <remove-project name="platform/packages/apps/Car/Stream" />
-    <remove-project name="platform/packages/apps/Car/SystemUpdater" />
+    <!--<remove-project name="platform/packages/apps/Car/Overview" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Radio" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Settings" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/Stream" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/packages/apps/Car/SystemUpdater" /> Not existing in the minimal omni twrp project-->
     <remove-project name="platform/packages/apps/Car/externallibs" />
     <remove-project name="platform/packages/apps/Car/tests" />
 </manifest>

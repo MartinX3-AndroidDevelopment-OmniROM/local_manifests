@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="MartinX3-AndroidDevelopment-OmniROM"
+            fetch="https://github.com/MartinX3-AndroidDevelopment-OmniROM"/>
+
+    <remove-project name="repo_update"/>
+    <project path="vendor/oss/repo_update" name="repo_update" groups="device" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/twrp-10">
+      <linkfile src="repo_update.sh" dest="repo_update.sh" />
+    </project>
+</manifest>
+

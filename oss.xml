@@ -18,4 +18,7 @@
 <project path="vendor/oss/repo_update" name="repo_update" groups="device" remote="sony" revision="android-10.0.0_r35">
     <linkfile src="repo_update.sh" dest="repo_update.sh" />
 </project>
+
+<!-- Add some extras -->
+<include name="local_manifests/omnirom/oss.xml"/>
 </manifest>

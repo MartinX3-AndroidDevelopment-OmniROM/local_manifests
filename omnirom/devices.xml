@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="MartinX3-AndroidDevelopment-OmniROM"
+            fetch="https://github.com/MartinX3-AndroidDevelopment-OmniROM"/>
+
+<!--sdm845-->
+<remove-project name="device-sony-akari" />
+<project path="device/sony/akari" name="android_device_sony_akari" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/twrp-10" />
+<remove-project name="device-sony-apollo" />
+<project path="device/sony/apollo" name="android_device_sony_apollo" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/twrp-10" />
+<remove-project name="device-sony-akatsuki" />
+<project path="device/sony/akatsuki" name="android_device_sony_akatsuki" remote="MartinX3-AndroidDevelopment-OmniROM" revision="MartinX3/twrp-10" />
+</manifest>
+

@@ -2,4 +2,7 @@
 <manifest>
 <remote name="exfatprogs" fetch="https://github.com/exfatprogs/" />
 <project path="vendor/external/exfatprogs" name="exfatprogs" groups="device" remote="exfatprogs" revision="refs/tags/1.0.4" />
+
+<!-- Add some extras -->
+<include name="local_manifests/omnirom/external.xml"/>
 </manifest>

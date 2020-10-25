@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remove-project name="kernel/tests" />
+    <!--<remove-project name="kernel/tests" /> Not existing in the minimal omni twrp project-->
     <remove-project name="platform/external/nos/host/generic" />
-    <remove-project name="platform/prebuilts/android-emulator" />
-    <remove-project name="platform/prebuilts/qemu-kernel" />
+    <!--<remove-project name="platform/prebuilts/android-emulator" /> Not existing in the minimal omni twrp project-->
+    <!--<remove-project name="platform/prebuilts/qemu-kernel" /> Not existing in the minimal omni twrp project-->
 </manifest>
